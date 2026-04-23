@@ -89,7 +89,9 @@ def is_serializable(args: list[str]) -> bool:
 
 def main():
     args = sys.argv[1:]
-    print(is_serializable(args))
+    print(str(is_serializable(args)).lower())
 
+# Example Usage:
+# python main.py w 1 x r 2 x w 2 y r 3 y w 3 z r 1 z
 if __name__ == "__main__":
     main()
