@@ -76,7 +76,8 @@ def has_cycle(graph: dict[int,set]) -> bool:
         visited.append(node)
         return False
 
-    return any(is_in_cycle(node) for node in graph.keys())
+    t_idxes = list(graph.keys())
+    return any(is_in_cycle(node) for node in t_idxes)
 
 
 def is_serializable(args: list[str]) -> bool:
